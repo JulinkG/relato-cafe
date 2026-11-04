@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Sticker } from "./Sticker";
 import { OpenStatus } from "./OpenStatus";
-import { Arrow, WhatsApp } from "./Icons";
+import { Arrow, Bag, WhatsApp } from "./Icons";
 import { negocio, waLink } from "@/lib/data";
 
 export function Hero() {
@@ -19,14 +19,24 @@ export function Hero() {
             Espresso, sodas naturales, frappés y algo rico para comer, en {negocio.direccion.calle}. ¡Prueba nuestras
             bebidas, lunches e historias!!
           </p>
-          <div className="hero__actions reveal" style={{ "--i": 3 } as React.CSSProperties}>
+          <ul className="servicio reveal" aria-label="Cómo pedir" style={{ "--i": 3 } as React.CSSProperties}>
+            <li>
+              <Bag />
+              Para llevar
+            </li>
+            <li>
+              <WhatsApp />
+              Pedidos por WhatsApp
+            </li>
+          </ul>
+          <div className="hero__actions reveal" style={{ "--i": 4 } as React.CSSProperties}>
             <a className="btn" href="#menu">
               Ver menú
               <Arrow />
             </a>
-            <a className="btn btn--outline" href={waLink("Hola Relato, quiero hacer un pedido.")} target="_blank" rel="noopener">
+            <a className="btn btn--outline" href={waLink("Hola Relato, quiero hacer un pedido para llevar.")} target="_blank" rel="noopener">
               <WhatsApp />
-              Escríbenos
+              Pide por WhatsApp
             </a>
           </div>
           <OpenStatus className="hero__status reveal" />

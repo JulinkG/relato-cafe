@@ -27,7 +27,14 @@ export const WhatsApp = ({ className }: P) => (
   </svg>
 );
 
-export const Pin = ({ className }: P) => (
+export const Bag = ({ className }: P) => (
+  <svg className={className} viewBox="0 0 16 16" fill="none" aria-hidden="true">
+    <path d="M3 5.5h10l-.8 8.2a1 1 0 0 1-1 .8H4.8a1 1 0 0 1-1-.8L3 5.5Z" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" />
+    <path d="M5.8 7.5V4.3a2.2 2.2 0 0 1 4.4 0v3.2" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+  </svg>
+);
+
+export const Pin =({ className }: P) => (
   <svg className={className} viewBox="0 0 16 16" fill="none" aria-hidden="true">
     <path d="M8 14.5s4.5-4.2 4.5-8A4.5 4.5 0 0 0 3.5 6.5c0 3.8 4.5 8 4.5 8Z" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" />
     <circle cx="8" cy="6.5" r="1.6" stroke="currentColor" strokeWidth="1.6" />

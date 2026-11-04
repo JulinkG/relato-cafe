@@ -27,6 +27,7 @@ Cafetería de barrio en la Col. Reforma con identidad de libro de relatos ilustr
 - Dirección (confirmada): RELATO CAFÉ, Netzahualcóyotl 307, Reforma, 68050 Oaxaca de Juárez, Oax., México.
 - Horario: 8:00–18:00. Días de apertura sin confirmar.
 - WhatsApp: 951 532 2358.
+- Servicio solo para llevar o por pedido de WhatsApp (sin consumo en mesa). Envío a domicilio sin confirmar: no prometerlo.
 - Pedidos y cotizaciones van por WhatsApp; no hay backend.
 - BARDO: sin tarifas confirmadas; no mostrar precios de eventos hasta tenerlas.
 

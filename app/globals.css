@@ -511,7 +511,39 @@ html {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin-top: 32px;
+  margin-top: 24px;
+}
+
+/* Cómo se pide: para llevar o por WhatsApp */
+.servicio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  margin: 24px 0 0;
+  padding: 0;
+}
+
+.servicio li {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 36px;
+  padding: 0 14px;
+  border: 1px solid var(--color-linea-grana);
+  border-radius: var(--radius-tags);
+  background: var(--color-blanco);
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-tinta);
+}
+
+.servicio svg {
+  width: 16px;
+  height: 16px;
+  color: var(--color-grana);
 }
 
 .hero__status {
@@ -852,7 +884,8 @@ html {
 }
 
 .menu__note {
-  font-size: 12px;
+  font-size: 14px;
+  line-height: 1.55;
   color: var(--color-cacao);
 }
 

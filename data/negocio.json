@@ -12,6 +12,10 @@
     "cierra": "18:00",
     "zonaHoraria": "America/Mexico_City"
   },
+  "servicio": {
+    "corto": "Para llevar · Pedidos por WhatsApp",
+    "detalle": "Todo es para llevar: pasa a la barra o haz tu pedido por WhatsApp."
+  },
   "whatsapp": "529515322358",
   "whatsappVisible": "951 532 2358",
   "destacados": [

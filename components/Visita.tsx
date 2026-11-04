@@ -13,10 +13,17 @@ export function Visita() {
             <h2 className="heading" id="visita-title">
               Ven por tu café
             </h2>
-            <p className="script">Aquí te guardamos una mesa</p>
+            <p className="script">Pásalo a recoger o pídelo por WhatsApp</p>
           </div>
 
           <dl className="facts">
+            <div className="fact">
+              <dt className="label">Servicio</dt>
+              <dd>
+                Para llevar
+                <small>{negocio.servicio.detalle}</small>
+              </dd>
+            </div>
             <div className="fact">
               <dt className="label">Dirección</dt>
               <dd>
@@ -48,9 +55,9 @@ export function Visita() {
               <Pin />
               Cómo llegar
             </a>
-            <a className="btn btn--outline" href={waLink("Hola Relato, tengo una pregunta.")} target="_blank" rel="noopener">
+            <a className="btn btn--outline" href={waLink("Hola Relato, quiero hacer un pedido para llevar.")} target="_blank" rel="noopener">
               <WhatsApp />
-              Escríbenos
+              Pide por WhatsApp
             </a>
           </div>
         </div>

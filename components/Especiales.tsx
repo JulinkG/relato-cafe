@@ -63,7 +63,7 @@ export function Especiales() {
               <p className="card__desc">{p.descripcion}</p>
               <div className="card__foot">
                 <span className="card__price">{precio(p.precio)}</span>
-                <a className="card__link" href={waLink(`Hola Relato, quiero pedir un ${p.nombre}.`)} target="_blank" rel="noopener">
+                <a className="card__link" href={waLink(`Hola Relato, quiero pedir para llevar: ${p.nombre}.`)} target="_blank" rel="noopener">
                   Pedir
                   <Arrow className="" />
                 </a>

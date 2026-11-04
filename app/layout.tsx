@@ -17,7 +17,7 @@ const nunito = Nunito({ subsets: ["latin"], weight: "700", variable: "--font-nun
 export const metadata: Metadata = {
   title: "Relato café · Historias con café",
   description:
-    "Cafetería en Netzahualcóyotl 307, Col. Reforma, Oaxaca de Juárez. Menú con precios, horario de 8:00 a 18:00 y pedidos por WhatsApp. BARDO · Barra errante para tus eventos.",
+    "Cafetería en Netzahualcóyotl 307, Col. Reforma, Oaxaca de Juárez. Café para llevar y pedidos por WhatsApp. Menú con precios, horario de 8:00 a 18:00. BARDO · Barra errante para tus eventos.",
   icons: { icon: "/marca/cacomixtle.png" },
 };
 

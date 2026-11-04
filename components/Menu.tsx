@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useLayoutEffect, useRef, useState } from "react";
-import { categorias, precio, waLink } from "@/lib/data";
+import { categorias, negocio, precio, waLink } from "@/lib/data";
 import { WhatsApp } from "./Icons";
 
 const corto: Record<string, string> = {
@@ -113,10 +113,14 @@ export function Menu() {
         </div>
 
         <div className="menu__foot">
-          <p className="menu__note">Precios en pesos mexicanos.</p>
-          <a className="btn" href={waLink("Hola Relato, quiero hacer un pedido:")} target="_blank" rel="noopener">
+          <p className="menu__note">
+            {negocio.servicio.detalle}
+            <br />
+            Precios en pesos mexicanos.
+          </p>
+          <a className="btn" href={waLink("Hola Relato, quiero hacer un pedido para llevar:")} target="_blank" rel="noopener">
             <WhatsApp />
-            Escríbenos por WhatsApp
+            Haz tu pedido por WhatsApp
           </a>
         </div>
       </div>
