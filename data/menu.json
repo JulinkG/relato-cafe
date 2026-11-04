@@ -47,7 +47,7 @@
       "nombre": "Especiales",
       "productos": [
         {
-          "nombre": "Macchiato Ámbar",
+          "nombre": "Caramel machiatto",
           "precio": 60,
           "descripcion": "Espresso con leche y caramelo: dulce, tostado y con la capa ámbar que le da su nombre."
         },
@@ -92,7 +92,7 @@
           "descripcion": "Espresso doble con jugo de naranja y agua mineral: cítrico y burbujeante."
         },
         {
-          "nombre": "El Umbral Derretido",
+          "nombre": "Afogatto",
           "precio": 60,
           "descripcion": "Affogato: espresso caliente vertido sobre helado de vainilla, con un toque de Nutella."
         }
