@@ -20,7 +20,7 @@ export default function HistoriasPage() {
           <header className="historias__head">
             <h1 className="hero__title reveal">Historias</h1>
             <p className="hero__slogan reveal" style={{ "--i": 1 } as React.CSSProperties}>
-              Cada bebida de la casa tiene su cuento
+              Cuentos, Relatos y bebidas
             </p>
           </header>
 
