@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Fraunces, Figtree, Shantell_Sans, Gaegu, Nunito } from "next/font/google";
 import "./globals.css";
+import { SITE_URL } from "@/lib/site";
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -15,6 +16,8 @@ const gaegu = Gaegu({ subsets: ["latin"], weight: "700", variable: "--font-gaegu
 const nunito = Nunito({ subsets: ["latin"], weight: "700", variable: "--font-nunito", display: "swap" });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
+  alternates: { canonical: "/" },
   title: "Relato café · Historias con café",
   description:
     "Cafetería en Netzahualcóyotl 307, Col. Reforma, Oaxaca de Juárez. Café para llevar y pedidos por WhatsApp. Menú con precios, horario de 8:00 a 18:00. BARDO · Barra errante para tus eventos.",

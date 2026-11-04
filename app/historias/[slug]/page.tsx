@@ -17,7 +17,11 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const { slug } = await params;
   const h = historias.find((x) => x.slug === slug);
   if (!h) return {};
-  return { title: `${h.titulo} · Historias de Relato café`, description: h.parrafos[0] };
+  return {
+    title: `${h.titulo} · Historias de Relato café`,
+    description: h.parrafos[0],
+    alternates: { canonical: `/historias/${h.slug}` },
+  };
 }
 
 export default async function HistoriaPage({ params }: Params) {

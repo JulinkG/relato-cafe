@@ -9,6 +9,7 @@ import { historias } from "@/lib/data";
 export const metadata: Metadata = {
   title: "Historias · Relato café",
   description: "Cuentos cortos de Relato café: cada bebida de la casa tiene su historia.",
+  alternates: { canonical: "/historias" },
 };
 
 export default function HistoriasPage() {
