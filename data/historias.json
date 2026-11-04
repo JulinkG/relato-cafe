@@ -1,0 +1,42 @@
+{
+  "historias": [
+    {
+      "slug": "soda-de-moras",
+      "titulo": "Soda de moras",
+      "subtitulo": "O de cómo el conde Vlad dejó la sangre",
+      "producto": { "categoria": "sodas-naturales", "nombre": "Moras" },
+      "sticker": "soda",
+      "parrafos": [
+        "—Nada de sangre, conde —dijo el médico, limpiando sus lentes—. Su colesterol tiene 743 años de antigüedad.",
+        "Vlad, ofendido y hambriento, se vio obligado a buscar sustitutos.",
+        "Probó el betabel: sabía a tierra. Probó el agua de jamaica, pero le faltaba ese sabor metálico. Probó la salsa de tomate y se intoxicó, porque la habían cocinado con ajo.",
+        "Una noche, muerto de hambre, encontró un zarzal cargado de moras. Con sus conocimientos alquímicos destiló un líquido rojo y espeso que parecía sangre. Al combinarlo con burbujas descubrió un sabor increíble: dulce, ácido y ¡sin ajo!",
+        "Curiosamente, desde que compartió la receta con los otros vampiros del condado, el robo a bancos de sangre bajó drásticamente."
+      ]
+    },
+    {
+      "slug": "omelette-lunch",
+      "titulo": "Omelette lunch",
+      "subtitulo": "La tía Mercedes y sus recuerditos de viaje",
+      "producto": { "categoria": "para-comer", "nombre": "Omelette" },
+      "sticker": "flor",
+      "parrafos": [
+        "A la tía Mercedes le encanta viajar. Va por aquí, va por allá, y jamás olvida traer algún recuerdito de los lugares que visita: arena de la playa, sombreros de España y un busto de un notario de Toledo que, si lo miras fijamente, parece que te sigue con la mirada.",
+        "—Tía, claramente esa estatua está embrujada.",
+        "—Claro que no —dijo Mercedes, harta de que a nadie le gustaran sus recuerdos—. Siempre exageran. Igual que con el fantasma de la posada Canterville."
+      ]
+    },
+    {
+      "slug": "limonada-de-dragonfruit",
+      "titulo": "Limonada de Dragonfruit",
+      "subtitulo": "Sir Aldric y los dos dragones",
+      "producto": { "categoria": "limonadas", "nombre": "Fruta de dragón" },
+      "sticker": "pata",
+      "parrafos": [
+        "—Solo dos veces he visto un dragón —dijo Sir Aldric, mientras se acomodaba el cinturón de la armadura que la cebada había apretujado contra su barriga—. La primera vez corrí tres leguas sin detenerme. Perdí mi espada y la bolsa con el oro de la cosecha.",
+        "—¿Y la segunda? —preguntó entusiasmado un joven mercader.",
+        "—La segunda fue cuando se lo conté a mi esposa."
+      ]
+    }
+  ]
+}

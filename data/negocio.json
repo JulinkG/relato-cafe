@@ -1,0 +1,25 @@
+{
+  "nombre": "Relato café",
+  "slogan": "Historias con café",
+  "direccion": {
+    "calle": "Netzahualcóyotl 307",
+    "colonia": "Col. Reforma",
+    "ciudad": "68050 Oaxaca de Juárez, Oax.",
+    "mapa": "RELATO CAFÉ, Netzahualcóyotl 307, Reforma, 68050 Oaxaca de Juárez, Oax., México"
+  },
+  "horario": {
+    "abre": "08:00",
+    "cierra": "18:00",
+    "zonaHoraria": "America/Mexico_City"
+  },
+  "whatsapp": "529515322358",
+  "whatsappVisible": "951 532 2358",
+  "destacados": [
+    "macchiato-ambar",
+    "el-umbral-derretido",
+    "cajeta-latte",
+    "lotus-latte",
+    "espresso-tonic-orange",
+    "matcha-latte"
+  ]
+}
