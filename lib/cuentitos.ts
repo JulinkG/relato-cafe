@@ -16,11 +16,11 @@ export const cuentitos: Record<Bebida, string[]> = {
     "En la colonia Reforma vive un limón que se cree naranja. Nadie lo corrige, porque es muy feliz. Cuando lo exprimimos para tus sodas, sale un poquito más dulce. Creo que la imaginación también tiene sabor.",
   ],
   pan: [
-    "Había un pan que se levantaba antes que todos. Mientras la ciudad dormía, él ya estaba en el horno contándose chistes. Por eso sale tan esponjoso: el pan que se ríe, se infla. Y si te lo comes con café, el que se ríe eres tú.",
+    "Una vez conocí a un panadero en Sevilla que se despertaba a las 4 am solo para ver el amanecer con olor a pan recién horneado... Hay quien nace teniendo claras sus prioridades",
   ],
   flor: [
-    "¡Achú! Eso no se toma, eso se huele. Pero ya que estamos: esta flor me la regaló una abeja a cambio de un cuento. Todavía le debo el final.",
-    "Mmm... sabe a primavera y a papel. No es una bebida, pero te perdono. Mejor pásame un cafecito y te cuento algo bonito.",
+    "¡Achú! Eso no se toma, eso se huele. Pero ya que estamos: esta flor me la regaló una abeja a cambio de un cuento. Le apliqué un G.R. Martin y le quedé debiendo el final jeje.",
+    "Mmm... sabe a primavera y a papel. Dios, me van a dar agruras",
   ],
 };
 
