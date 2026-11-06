@@ -1,5 +1,4 @@
-import Image from "next/image";
-import { Sticker } from "./Sticker";
+import { HeroArt } from "./HeroArt";
 import { OpenStatus } from "./OpenStatus";
 import { Arrow, Bag, WhatsApp } from "./Icons";
 import { negocio, waLink } from "@/lib/data";
@@ -42,42 +41,7 @@ export function Hero() {
           <OpenStatus className="hero__status reveal" />
         </div>
 
-        <div className="hero__art">
-          <Image
-            className="hero__face reveal"
-            src="/marca/cacomixtle.png"
-            alt="El cacomixtle de Relato café, dibujado a crayón"
-            width={312}
-            height={229}
-            priority
-            style={{ "--i": 1 } as React.CSSProperties}
-          />
-          <Sticker
-            src="/marca/cafe.png"
-            width={180}
-            height={180}
-            rotate={-9}
-            delay={520}
-            style={{ left: "-6%", top: "-4%", width: "30%" }}
-          />
-          <Sticker
-            src="/marca/soda.png"
-            width={180}
-            height={180}
-            rotate={8}
-            delay={640}
-            style={{ right: "-10%", bottom: "-8%", width: "30%" }}
-          />
-          <Sticker
-            src="/marca/flor.png"
-            width={160}
-            height={160}
-            rotate={12}
-            delay={760}
-            style={{ right: "2%", top: "-6%", width: "20%" }}
-          />
-          <p className="hero__hint">psst, los stickers se despegan</p>
-        </div>
+        <HeroArt />
       </div>
     </section>
   );

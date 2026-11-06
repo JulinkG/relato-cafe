@@ -701,6 +701,137 @@ html {
   }
 }
 
+/* Darle de tomar al cacomixtle: el sticker se encoge y luego se vuelve a pegar en su lugar */
+.sticker[data-phase="sip"] {
+  pointer-events: none;
+}
+
+.sticker[data-phase="sip"] .sticker__img {
+  transform: rotate(calc(var(--r, 0deg) * -1)) scale(0.2);
+  opacity: 0;
+  transition:
+    transform 420ms cubic-bezier(0.55, 0, 0.75, 0.2),
+    opacity 420ms ease-in;
+}
+
+.sticker[data-phase="back"] .sticker__place {
+  animation: stick-back 620ms var(--ease-out) both;
+  animation-delay: 900ms;
+}
+
+@keyframes stick-back {
+  from {
+    opacity: 0;
+    transform: scale(1.18) rotate(8deg) translateY(-14px);
+  }
+  60% {
+    opacity: 1;
+  }
+}
+
+.hero__face--gulp {
+  animation: gulp 520ms var(--ease-out);
+  transform-origin: 50% 80%;
+}
+
+@keyframes gulp {
+  30% {
+    transform: scale(1.06, 0.94);
+  }
+  60% {
+    transform: scale(0.97, 1.04);
+  }
+}
+
+/* Globo con el cuento */
+.cuentito {
+  position: absolute;
+  inset: auto -8% calc(100% - 56px) -8%;
+  z-index: 6;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.cuentito__globo {
+  position: relative;
+  pointer-events: auto;
+  max-width: min(100%, 440px);
+  padding: 16px 40px 16px 20px;
+  background: var(--color-blanco);
+  color: var(--color-tinta);
+  border: 2px solid var(--color-tinta);
+  border-radius: 22px 26px 20px 24px;
+  box-shadow: -3px 4px 0 rgba(58, 31, 34, 0.12);
+  font-family: var(--font-shantell-stack);
+  font-size: 15px;
+  line-height: 1.5;
+  transform-origin: 50% 100%;
+  animation: globo 420ms var(--ease-out) both;
+}
+
+.cuentito__globo p {
+  margin: 0;
+}
+
+/* Colita del globo apuntando al cacomixtle */
+.cuentito__globo::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -11px;
+  width: 18px;
+  height: 18px;
+  background: var(--color-blanco);
+  border-right: 2px solid var(--color-tinta);
+  border-bottom: 2px solid var(--color-tinta);
+  transform: translateX(-50%) rotate(45deg) skew(8deg, 8deg);
+}
+
+/* En móvil arriba está el encabezado: el globo sale por debajo del cacomixtle */
+@media (max-width: 899px) {
+  .cuentito {
+    inset: calc(100% - 4px) 0 auto 0;
+  }
+  .cuentito__globo {
+    max-width: min(100%, 380px);
+  }
+  .cuentito__globo {
+    transform-origin: 50% 0;
+  }
+  .cuentito__globo::after {
+    bottom: auto;
+    top: -11px;
+    transform: translateX(-50%) rotate(225deg) skew(8deg, 8deg);
+  }
+}
+
+.cuentito__cerrar {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  width: 28px;
+  height: 28px;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--color-cacao);
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.cuentito__cerrar:hover {
+  color: var(--color-grana);
+}
+
+@keyframes globo {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.92);
+  }
+}
+
 /* ---------- Divisor ondulado ---------- */
 .wave {
   display: block;
