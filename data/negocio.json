@@ -10,7 +10,8 @@
   "horario": {
     "abre": "08:00",
     "cierra": "18:00",
-    "zonaHoraria": "America/Mexico_City"
+    "zonaHoraria": "America/Mexico_City",
+    "proximamente": true
   },
   "servicio": {
     "corto": "Para llevar · Pedidos por WhatsApp",

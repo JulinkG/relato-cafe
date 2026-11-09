@@ -33,9 +33,10 @@ export function OpenStatus({ className = "" }: { className?: string }) {
     return () => clearInterval(t);
   }, []);
 
-  const { abre, cierra } = negocio.horario;
-  const text =
-    open === null
+  const { abre, cierra, proximamente } = negocio.horario;
+  const text = proximamente
+    ? "Próximamente"
+    : open === null
       ? `De ${abre} a ${cierra}`
       : open
         ? `Abierto ahora · cerramos a las ${cierra}`
@@ -43,7 +44,7 @@ export function OpenStatus({ className = "" }: { className?: string }) {
 
   return (
     <span className={className} aria-live="polite">
-      <span className="dot" data-open={open === true} />
+      <span className="dot" data-open={!proximamente && open === true} />
       {text}
     </span>
   );
