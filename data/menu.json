@@ -104,7 +104,15 @@
           "precio": 70,
           "descripcion": "Espresso caliente vertido sobre helado de vainilla con un toque de Nutella: frío y caliente en una cucharada."
         }
-      ]
+      ],
+      "foto": {
+        "src": "/fotos/chai-cold-foam.webp",
+        "ancho": 1145,
+        "alto": 1374,
+        "alt": "Chai latte frío con cold foam y canela espolvoreada en vaso transparente, sobre una mesa de mármol con hielos",
+        "posicion": "50% 30%",
+        "pie": "Chai latte con cold foam"
+      }
     },
     {
       "id": "frappes",
@@ -169,7 +177,15 @@
           "precio": 60,
           "descripcion": "Limón, jengibre y miel con agua mineral: fresca, burbujeante y con un final picosito."
         }
-      ]
+      ],
+      "foto": {
+        "src": "/fotos/soda-moras.webp",
+        "ancho": 1145,
+        "alto": 1374,
+        "alt": "Soda de moras con hielo en vaso de Relato, junto a flores secas",
+        "posicion": "50% 35%",
+        "pie": "Soda de Moras"
+      }
     },
     {
       "id": "limonadas",
@@ -245,15 +261,7 @@
           "precio": 25,
           "descripcion": "Agua fresca de horchata, dulce y cremosa, como la de casa."
         }
-      ],
-      "foto": {
-        "src": "/fotos/agua-jamaica.webp",
-        "ancho": 1145,
-        "alto": 1374,
-        "alt": "Agua de jamaica con hielo en vaso de Relato junto a flores de jamaica",
-        "posicion": "50% 35%",
-        "pie": "Agua de Jamaica"
-      }
+      ]
     },
     {
       "id": "para-comer",
