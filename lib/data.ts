@@ -21,7 +21,14 @@ export const productoDe = (h: Historia): Producto | undefined =>
     : undefined;
 
 export type Producto = { nombre: string; precio: number; descripcion: string; grupo?: string };
-export type Categoria = { id: string; nombre: string; productos: Producto[] };
+export type Foto = { src: string; ancho: number; alto: number; alt: string; posicion?: string; pie?: string };
+export type Categoria = {
+  id: string;
+  nombre: string;
+  productos: Producto[];
+  foto?: Foto; // foto de la categoría completa
+  fotosGrupo?: Record<string, Foto>; // foto por subcategoría (clave = `grupo`)
+};
 
 export const categorias = menu.categorias as Categoria[];
 export { negocio };

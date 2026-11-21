@@ -39,7 +39,8 @@ DESIGN.md es vinculante: paleta oficial (nov 2026: Blanco, Granada, Caramelo, Ex
 
 - Menú real con precios (`data/menu.json`).
 - Ilustraciones de marca (`public/marca`). El logo del cacomixtle solo existe a 312 px; falta versión en alta.
-- No hay fotos de producto ni de eventos: no inventar galería ni testimonios.
+- Fotos de producto (nov 2026) en `public/fotos`: capuchino, frappé Oreo, smoothie de mango, agua de jamaica, baguette, club sandwich, bowl César y postres. Se muestran como foto de su categoría o subcategoría en la carta (`foto` / `fotosGrupo` en `data/menu.json`).
+- No hay fotos de eventos: no inventar galería ni testimonios.
 
 ## Product Principles
 

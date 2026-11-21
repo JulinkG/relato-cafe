@@ -964,6 +964,51 @@ html {
   border-bottom: 1px dashed var(--color-linea-grana);
 }
 
+/* Foto de categoría / subcategoría: arriba en móvil, columna fija a la izquierda en escritorio */
+.menu__foto {
+  position: relative;
+  margin: 24px 0 4px;
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+  border-radius: var(--radius-cards);
+  background: rgba(44, 30, 22, 0.06);
+  box-shadow: var(--shadow-soft);
+  animation: item-in 420ms var(--ease-out) both;
+}
+
+.menu__foto img {
+  object-fit: cover;
+}
+
+.menu__foto-pie {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  padding: 6px 12px;
+  border-radius: var(--radius-tags);
+  background: var(--color-blanco);
+  color: var(--color-tinta);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .menu__body--foto {
+    display: grid;
+    grid-template-columns: minmax(220px, 300px) 1fr;
+    gap: 0 48px;
+    align-items: start;
+  }
+
+  .menu__body--foto .menu__foto {
+    position: sticky;
+    top: 104px;
+    aspect-ratio: 4 / 5;
+    margin-top: 24px;
+  }
+}
+
 .menu__list {
   display: grid;
   gap: 0 64px;
@@ -975,6 +1020,13 @@ html {
 @media (min-width: 768px) {
   .menu__list {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Junto a una foto, la lista va a una columna hasta que haya espacio para dos */
+@media (min-width: 768px) and (max-width: 1099px) {
+  .menu__body--foto .menu__list {
+    grid-template-columns: 1fr;
   }
 }
 

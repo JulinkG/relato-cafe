@@ -1,7 +1,8 @@
 "use client";
 
+import Image from "next/image";
 import { useCallback, useLayoutEffect, useRef, useState } from "react";
-import { categorias, negocio, precio, waLink, type Producto } from "@/lib/data";
+import { categorias, negocio, precio, waLink, type Foto, type Producto } from "@/lib/data";
 import { WhatsApp } from "./Icons";
 
 const corto: Record<string, string> = {
@@ -108,9 +109,24 @@ export function Menu() {
             <h3 className="label">{cat.nombre}</h3>
             <span className="menu__count">{cat.productos.length} opciones</span>
           </div>
-          {agrupar(cat.productos).map((g) => (
+          {agrupar(cat.productos).map((g) => {
+            const foto: Foto | undefined = g.grupo ? cat.fotosGrupo?.[g.grupo] : cat.foto;
+            return (
             <div className="menu__group" key={`${cat.id}-${g.grupo ?? ""}`}>
               {g.grupo && <h4 className="menu__subcat">{g.grupo}</h4>}
+              <div className={foto ? "menu__body menu__body--foto" : "menu__body"}>
+              {foto && (
+                <figure className="menu__foto">
+                  <Image
+                    src={foto.src}
+                    alt={foto.alt}
+                    fill
+                    sizes="(min-width: 768px) 300px, calc(100vw - 32px)"
+                    style={{ objectPosition: foto.posicion ?? "50% 50%" }}
+                  />
+                  {foto.pie && <figcaption className="menu__foto-pie">En la foto: {foto.pie}</figcaption>}
+                </figure>
+              )}
               <ul className="menu__list">
                 {g.productos.map((p) => (
                   <li
@@ -126,8 +142,10 @@ export function Menu() {
                   </li>
                 ))}
               </ul>
+              </div>
             </div>
-          ))}
+            );
+          })}
         </div>
 
         <div className="menu__foot">

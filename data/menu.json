@@ -40,7 +40,15 @@
           "precio": 60,
           "descripcion": "Espresso, chocolate y leche cremosa que se funden en una taza dulce y reconfortante."
         }
-      ]
+      ],
+      "foto": {
+        "src": "/fotos/capuchino.webp",
+        "ancho": 1145,
+        "alto": 1374,
+        "alt": "Capuchino en vaso para llevar con canela espolvoreada sobre la espuma, junto a granos de café y un libro abierto",
+        "posicion": "50% 50%",
+        "pie": "Capuchino"
+      }
     },
     {
       "id": "especiales",
@@ -132,7 +140,15 @@
           "precio": 80,
           "descripcion": "Frappé de horchata dulce y cremosa: el sabor tradicional mexicano, bien frío."
         }
-      ]
+      ],
+      "foto": {
+        "src": "/fotos/frappe-oreo.webp",
+        "ancho": 1145,
+        "alto": 1374,
+        "alt": "Frappé Oreo en vaso de Relato con crema batida y galleta triturada, junto a dos galletas Oreo",
+        "posicion": "50% 30%",
+        "pie": "Frappé Oreo"
+      }
     },
     {
       "id": "sodas-naturales",
@@ -205,7 +221,15 @@
           "precio": 70,
           "descripcion": "Mango licuado en un smoothie espeso, dulce y tropical."
         }
-      ]
+      ],
+      "foto": {
+        "src": "/fotos/smoothie-mango.webp",
+        "ancho": 1145,
+        "alto": 1374,
+        "alt": "Smoothie de mango en vaso de Relato junto a un mango cortado en cubos",
+        "posicion": "50% 35%",
+        "pie": "Smoothie de Mango"
+      }
     },
     {
       "id": "aguas-frescas",
@@ -221,7 +245,15 @@
           "precio": 25,
           "descripcion": "Agua fresca de horchata, dulce y cremosa, como la de casa."
         }
-      ]
+      ],
+      "foto": {
+        "src": "/fotos/agua-jamaica.webp",
+        "ancho": 1145,
+        "alto": 1374,
+        "alt": "Agua de jamaica con hielo en vaso de Relato junto a flores de jamaica",
+        "posicion": "50% 35%",
+        "pie": "Agua de Jamaica"
+      }
     },
     {
       "id": "para-comer",
@@ -317,7 +349,39 @@
           "descripcion": "Caja grande de besos de nuez.",
           "grupo": "Postres"
         }
-      ]
+      ],
+      "fotosGrupo": {
+        "Baguettes": {
+          "src": "/fotos/baguette.webp",
+          "ancho": 1402,
+          "alto": 1122,
+          "alt": "Baguette con ajonjolí partida a la mitad, rellena de pollo, lechuga y aguacate",
+          "posicion": "50% 55%"
+        },
+        "Club sandwich": {
+          "src": "/fotos/club-sandwich.webp",
+          "ancho": 1448,
+          "alto": 1086,
+          "alt": "Club sandwich en pan brioche dorado con pollo, jamón y queso fundido, con ensalada y manzana con miel",
+          "posicion": "40% 55%"
+        },
+        "Bowls": {
+          "src": "/fotos/bowl-cesar.webp",
+          "ancho": 1402,
+          "alto": 1122,
+          "alt": "Bowl de ensalada César con pollo a la parrilla, crutones, jitomate cherry y germinado",
+          "posicion": "50% 50%",
+          "pie": "Bowl Ensalada César"
+        },
+        "Postres": {
+          "src": "/fotos/postres.webp",
+          "ancho": 1402,
+          "alto": 1122,
+          "alt": "Caja de besos de nuez y bolsa de galletas brownie sobre un plato, junto a una taza de café",
+          "posicion": "50% 60%",
+          "pie": "Besos de nuez y galletas brownie"
+        }
+      }
     },
     {
       "id": "extras",
