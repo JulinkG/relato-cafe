@@ -34,7 +34,7 @@ export function Visita() {
             <div className="fact">
               <dt className="label">Horario</dt>
               <dd>
-                {horario.abre} a {horario.cierra}
+                {horario.diasTexto}, {horario.abre} a {horario.cierra}
                 <small>
                   <OpenStatus />
                 </small>

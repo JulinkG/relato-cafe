@@ -17,7 +17,7 @@ export function Footer() {
               {direccion.calle}, {direccion.colonia}
             </a>
             <br />
-            {horario.abre} a {horario.cierra}
+            {horario.diasTexto}, {horario.abre} a {horario.cierra}
           </p>
         </div>
         <div>

@@ -8,6 +8,8 @@
     "mapa": "RELATO CAFÉ, Netzahualcóyotl 307, Reforma, 68050 Oaxaca de Juárez, Oax., México"
   },
   "horario": {
+    "dias": [1, 2, 3, 4, 5, 6],
+    "diasTexto": "Lunes a sábado",
     "abre": "08:00",
     "cierra": "18:00",
     "zonaHoraria": "America/Mexico_City",
