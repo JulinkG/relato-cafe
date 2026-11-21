@@ -20,7 +20,7 @@ export const productoDe = (h: Historia): Producto | undefined =>
         ?.productos.find((p) => p.nombre === h.producto!.nombre)
     : undefined;
 
-export type Producto = { nombre: string; precio: number; descripcion: string };
+export type Producto = { nombre: string; precio: number; descripcion: string; grupo?: string };
 export type Categoria = { id: string; nombre: string; productos: Producto[] };
 
 export const categorias = menu.categorias as Categoria[];

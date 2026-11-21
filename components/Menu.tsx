@@ -1,15 +1,23 @@
 "use client";
 
 import { useCallback, useLayoutEffect, useRef, useState } from "react";
-import { categorias, negocio, precio, waLink } from "@/lib/data";
+import { categorias, negocio, precio, waLink, type Producto } from "@/lib/data";
 import { WhatsApp } from "./Icons";
 
 const corto: Record<string, string> = {
   "cafe-clasico": "Clásicos",
   "sodas-naturales": "Sodas",
   "aguas-frescas": "Aguas",
-  "club-sandwich": "Club",
 };
+
+// Agrupa los productos por su subcategoría (campo `grupo`), respetando el orden del JSON.
+const agrupar = (productos: Producto[]) =>
+  productos.reduce<{ grupo?: string; productos: Producto[] }[]>((acc, p) => {
+    const last = acc[acc.length - 1];
+    if (last && last.grupo === p.grupo) last.productos.push(p);
+    else acc.push({ grupo: p.grupo, productos: [p] });
+    return acc;
+  }, []);
 
 export function Menu() {
   const [active, setActive] = useState(categorias[0].id);
@@ -100,17 +108,26 @@ export function Menu() {
             <h3 className="label">{cat.nombre}</h3>
             <span className="menu__count">{cat.productos.length} opciones</span>
           </div>
-          <ul className="menu__list" key={cat.id}>
-            {cat.productos.map((p, i) => (
-              <li className="item" key={p.nombre} style={{ "--i": i } as React.CSSProperties}>
-                <div className="item__row">
-                  <span className="item__name">{p.nombre}</span>
-                  <span className="item__price">{precio(p.precio)}</span>
-                </div>
-                <p className="item__desc">{p.descripcion}</p>
-              </li>
-            ))}
-          </ul>
+          {agrupar(cat.productos).map((g) => (
+            <div className="menu__group" key={`${cat.id}-${g.grupo ?? ""}`}>
+              {g.grupo && <h4 className="menu__subcat">{g.grupo}</h4>}
+              <ul className="menu__list">
+                {g.productos.map((p) => (
+                  <li
+                    className="item"
+                    key={p.nombre}
+                    style={{ "--i": cat.productos.indexOf(p) } as React.CSSProperties}
+                  >
+                    <div className="item__row">
+                      <span className="item__name">{p.nombre}</span>
+                      <span className="item__price">{precio(p.precio)}</span>
+                    </div>
+                    <p className="item__desc">{p.descripcion}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
 
         <div className="menu__foot">

@@ -947,6 +947,17 @@ html {
   color: var(--color-cacao);
 }
 
+.menu__subcat {
+  margin: 32px 0 0;
+  padding-bottom: 8px;
+  font-family: var(--font-fraunces-stack);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+  color: var(--color-grana);
+  border-bottom: 1px dashed var(--color-linea-grana);
+}
+
 .menu__list {
   display: grid;
   gap: 0 64px;

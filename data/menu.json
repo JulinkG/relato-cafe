@@ -224,107 +224,98 @@
       ]
     },
     {
-      "id": "baguettes",
-      "nombre": "Baguettes",
-      "productos": [
-        {
-          "nombre": "Baguette española",
-          "precio": 80,
-          "descripcion": "Baguette crujiente con jamón, pepperoni y mozzarella fundida; ensalada y aderezo de chipotle aparte."
-        },
-        {
-          "nombre": "Baguette pollo crunchy",
-          "precio": 80,
-          "descripcion": "Baguette con jamón, pollo marinado bien crujiente y mozzarella; ensalada y chipotle aparte."
-        },
-        {
-          "nombre": "Baguette arrachera",
-          "precio": 110,
-          "descripcion": "Baguette con arrachera jugosa, mozzarella fundida, aguacate y chimichurri, con ensalada fresca."
-        },
-        {
-          "nombre": "Pan de ajo",
-          "precio": 45,
-          "descripcion": "Baguette con mantequilla de ajo y perejil, gratinado con mozzarella y salsa de tomate para acompañar."
-        }
-      ]
-    },
-    {
-      "id": "club-sandwich",
-      "nombre": "Club sandwich",
-      "productos": [
-        {
-          "nombre": "Club sandwich Pollo con champiñón",
-          "precio": 100,
-          "descripcion": "Pan brioche suave con pollo jugoso bañado en salsa de champiñón. Con ensalada y manzana con miel."
-        },
-        {
-          "nombre": "Club sandwich Milanesa",
-          "precio": 100,
-          "descripcion": "Pan brioche con milanesa de pollo crujiente, queso mozzarella y mayonesa de chipotle. Con ensalada y manzana con miel."
-        },
-        {
-          "nombre": "Club sandwich Estilo italiano",
-          "precio": 80,
-          "descripcion": "Pan brioche con jamón, pepperoni y mozzarella fundida. Con ensalada y manzana con miel."
-        }
-      ]
-    },
-    {
-      "id": "desayunos",
-      "nombre": "Desayunos",
+      "id": "para-comer",
+      "nombre": "Para comer",
       "productos": [
         {
           "nombre": "Pan francés",
           "precio": 90,
-          "descripcion": "Pan brioche bañado en huevo, leche y vainilla, dorado en sartén y servido con frutos rojos y kiwi."
+          "descripcion": "Pan brioche bañado en huevo, leche y vainilla, dorado en sartén y servido con frutos rojos y kiwi.",
+          "grupo": "Desayunos"
         },
         {
           "nombre": "Omelette",
           "precio": 80,
-          "descripcion": "Cuatro huevos esponjosos rellenos de jamón y mozzarella fundida, con ensalada fresca."
+          "descripcion": "Cuatro huevos esponjosos rellenos de jamón y mozzarella fundida, con ensalada fresca.",
+          "grupo": "Desayunos"
         },
         {
           "nombre": "Pizzetta",
           "precio": 40,
-          "descripcion": "Masa de hojaldre rellena de salsa de tomate, mozzarella, jamón y pepperoni."
-        }
-      ]
-    },
-    {
-      "id": "bowls",
-      "nombre": "Bowls",
-      "productos": [
+          "descripcion": "Masa de hojaldre rellena de salsa de tomate, mozzarella, jamón y pepperoni.",
+          "grupo": "Desayunos"
+        },
+        {
+          "nombre": "Baguette española",
+          "precio": 80,
+          "descripcion": "Baguette crujiente con jamón, pepperoni y mozzarella fundida; ensalada y aderezo de chipotle aparte.",
+          "grupo": "Baguettes"
+        },
+        {
+          "nombre": "Baguette pollo crunchy",
+          "precio": 80,
+          "descripcion": "Baguette con jamón, pollo marinado bien crujiente y mozzarella; ensalada y chipotle aparte.",
+          "grupo": "Baguettes"
+        },
+        {
+          "nombre": "Baguette arrachera",
+          "precio": 110,
+          "descripcion": "Baguette con arrachera jugosa, mozzarella fundida, aguacate y chimichurri, con ensalada fresca.",
+          "grupo": "Baguettes"
+        },
+        {
+          "nombre": "Pan de ajo",
+          "precio": 45,
+          "descripcion": "Baguette con mantequilla de ajo y perejil, gratinado con mozzarella y salsa de tomate para acompañar.",
+          "grupo": "Baguettes"
+        },
+        {
+          "nombre": "Club sandwich Pollo con champiñón",
+          "precio": 100,
+          "descripcion": "Pan brioche suave con pollo jugoso bañado en salsa de champiñón. Con ensalada y manzana con miel.",
+          "grupo": "Club sandwich"
+        },
+        {
+          "nombre": "Club sandwich Milanesa",
+          "precio": 100,
+          "descripcion": "Pan brioche con milanesa de pollo crujiente, queso mozzarella y mayonesa de chipotle. Con ensalada y manzana con miel.",
+          "grupo": "Club sandwich"
+        },
+        {
+          "nombre": "Club sandwich Estilo italiano",
+          "precio": 80,
+          "descripcion": "Pan brioche con jamón, pepperoni y mozzarella fundida. Con ensalada y manzana con miel.",
+          "grupo": "Club sandwich"
+        },
         {
           "nombre": "Bowl Avena y fruta",
           "precio": 100,
-          "descripcion": "Avena cremosa con fresas, moras, plátano y manzana, terminada con un hilo de miel."
+          "descripcion": "Avena cremosa con fresas, moras, plátano y manzana, terminada con un hilo de miel.",
+          "grupo": "Bowls"
         },
         {
           "nombre": "Bowl Ensalada César",
           "precio": 100,
-          "descripcion": "Lechugas frescas, pollo, tomate, cebolla morada, germinado y crutones crujientes con aderezo César."
-        }
-      ]
-    },
-    {
-      "id": "postres",
-      "nombre": "Postres",
-      "productos": [
+          "descripcion": "Lechugas frescas, pollo, tomate, cebolla morada, germinado y crutones crujientes con aderezo César.",
+          "grupo": "Bowls"
+        },
         {
           "nombre": "Galletas brownie",
           "precio": 40,
-          "descripcion": "Bolsa de galletas tipo brownie."
+          "descripcion": "Bolsa de galletas tipo brownie.",
+          "grupo": "Postres"
         },
         {
           "nombre": "Besos de nuez caja chica",
           "precio": 50,
-          "descripcion": "Caja chica de besos de nuez."
+          "descripcion": "Caja chica de besos de nuez.",
+          "grupo": "Postres"
         },
         {
           "nombre": "Besos de nuez caja grande",
           "precio": 100,
-          "descripcion": "Caja grande de besos de nuez."
+          "descripcion": "Caja grande de besos de nuez.",
+          "grupo": "Postres"
         }
       ]
     },
