@@ -283,6 +283,11 @@
           "nombre": "Omelette",
           "precio": 80,
           "descripcion": "Cuatro huevos esponjosos rellenos de jamón y mozzarella fundida, con ensalada fresca."
+        },
+        {
+          "nombre": "Pizzetta",
+          "precio": 40,
+          "descripcion": "Masa de hojaldre rellena de salsa de tomate, mozzarella, jamón y pepperoni."
         }
       ]
     },
