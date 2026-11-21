@@ -43,7 +43,7 @@ export function Visita() {
             <div className="fact">
               <dt className="label">WhatsApp</dt>
               <dd>
-                <a href={waLink()} target="_blank" rel="noopener">
+                <a className="tel" href={waLink()} target="_blank" rel="noopener">
                   {whatsappVisible}
                 </a>
               </dd>

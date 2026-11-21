@@ -19,6 +19,7 @@ export const metadata: Metadata = {
   description:
     "Cafetería en Netzahualcóyotl 307, Col. Reforma, Oaxaca de Juárez. Café para llevar y pedidos por WhatsApp. Menú con precios, horario de 8:00 a 18:00. BARDO · Barra errante para tus eventos.",
   icons: { icon: "/marca/cacomixtle.png" },
+  formatDetection: { telephone: false },
 };
 
 export const viewport: Viewport = { themeColor: "#FFFFFF" };

@@ -23,7 +23,7 @@ export function Footer() {
         <div>
           <span className="label">Escríbenos</span>
           <p>
-            <a href={waLink()} target="_blank" rel="noopener">
+            <a className="tel" href={waLink()} target="_blank" rel="noopener">
               WhatsApp {whatsappVisible}
             </a>
             <br />

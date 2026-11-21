@@ -1353,9 +1353,13 @@ html {
 }
 
 .fact a {
-  text-decoration-thickness: 1px;
-  text-underline-offset: 4px;
-  text-decoration-color: var(--color-linea-grana);
+  text-decoration: none;
+}
+
+/* Teléfonos sin subrayado: con él parecían texto con error */
+.tel {
+  text-decoration: none;
+  white-space: nowrap;
 }
 
 .visita__actions {
