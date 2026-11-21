@@ -33,7 +33,7 @@ Cafetería de barrio en la Col. Reforma con identidad de libro de relatos ilustr
 
 ## Brand Commitments
 
-DESIGN.md (Propuesta A "Grana y Rayón") es vinculante: paleta, tipografías, componentes y reglas de ilustración. Dibujos oficiales: cacomixtle, BARDO, café, pata, soda, flor (origen `C:\Users\julin\Pictures\Relato_branding`).
+DESIGN.md es vinculante: paleta oficial (nov 2026: Blanco, Granada, Caramelo, Expreso), tipografías Gaegu y Nunito, componentes y reglas de ilustración. Dibujos oficiales: cacomixtle, BARDO, café, pata, soda, flor (origen `C:\Users\julin\Pictures\Relato_branding`).
 
 ## Evidence on Hand
 

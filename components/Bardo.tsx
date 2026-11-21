@@ -42,7 +42,7 @@ export function Bardo() {
 
   return (
     <section className="bardo" id="bardo" aria-labelledby="bardo-title">
-      <Wave color="var(--color-agave)" bg="var(--color-papel)" variant={2} />
+      <Wave color="var(--color-caramelo)" bg="var(--color-papel)" variant={2} />
       <div className="wrap bardo__inner">
         <div className="bardo__grid">
           <div>
@@ -113,7 +113,7 @@ export function Bardo() {
               <input id="lugar" name="lugar" placeholder="Colonia o salón" />
             </div>
 
-            <button className="btn btn--agave" type="submit">
+            <button className="btn btn--caramelo" type="submit">
               Agenda tu evento
               <Arrow />
             </button>

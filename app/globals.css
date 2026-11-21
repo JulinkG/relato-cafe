@@ -1,19 +1,24 @@
-/* Relato café — tokens de DESIGN.md (Propuesta A "Grana y Rayón") */
+/* Relato café — paleta oficial (nov 2026) */
 :root {
-  --color-papel: #f6f0f2;
-  --color-tinta: #3a1f22;
-  --color-grana: #a3123a;
-  --color-cacao: #5b4840;
-  --color-agave: #4f6b54;
-  --color-blanco: #ffffff;
-  --color-linea: rgba(58, 31, 34, 0.2);
-  --color-linea-grana: rgba(163, 18, 58, 0.4);
+  /* Marca */
+  --relato-blanco: #ffffff;   /* primario · fondo */
+  --relato-granada: #c0392b;  /* secundario */
+  --relato-caramelo: #d98a2b; /* acento */
+  --relato-expreso: #2c1e16;  /* texto */
 
-  --font-gaegu-stack: var(--font-gaegu), cursive;
-  --font-nunito-stack: var(--font-nunito), ui-sans-serif, system-ui, sans-serif;
-  --font-fraunces-stack: var(--font-fraunces), ui-serif, Georgia, serif;
-  --font-figtree-stack: var(--font-figtree), ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  --font-shantell-stack: var(--font-shantell), cursive;
+  /* Roles (los componentes usan estos nombres) */
+  --color-papel: var(--relato-blanco);
+  --color-blanco: var(--relato-blanco);
+  --color-tinta: var(--relato-expreso);
+  --color-grana: var(--relato-granada);
+  --color-caramelo: var(--relato-caramelo);
+  --color-sobre-caramelo: var(--relato-expreso); /* el blanco no contrasta sobre caramelo */
+  --color-cacao: #66564b; /* texto secundario: expreso aclarado */
+  --color-linea: rgba(44, 30, 22, 0.2);
+  --color-linea-grana: rgba(192, 57, 43, 0.4);
+
+  --font-display: var(--font-gaegu), cursive; /* títulos · Bold 700 */
+  --font-body: var(--font-nunito), ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; /* textos · 400/700/800 */
 
   --radius-tags: 16px;
   --radius-cards: 8px;
@@ -21,8 +26,8 @@
   --radius-buttons: 32px;
   --radius-bardo: 10px;
 
-  --shadow-soft: rgba(58, 31, 34, 0.06) 0px 16px 24px 0px;
-  --shadow-card: rgba(58, 31, 34, 0.12) -14px 10px 40px 0px;
+  --shadow-soft: rgba(44, 30, 22, 0.06) 0px 16px 24px 0px;
+  --shadow-card: rgba(44, 30, 22, 0.12) -14px 10px 40px 0px;
 
   --page-max-width: 1200px;
   --gutter: 16px;
@@ -59,7 +64,7 @@ body {
   margin: 0;
   background: var(--color-papel);
   color: var(--color-tinta);
-  font-family: var(--font-figtree-stack);
+  font-family: var(--font-body);
   font-size: 16px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -100,7 +105,7 @@ button {
 }
 
 html {
-  scrollbar-color: rgba(58, 31, 34, 0.35) var(--color-papel);
+  scrollbar-color: rgba(44, 30, 22, 0.35) var(--color-papel);
 }
 
 .sr-only {
@@ -124,7 +129,7 @@ html {
 
 /* ---------- Tipografía ---------- */
 .label {
-  font-family: var(--font-figtree-stack);
+  font-family: var(--font-body);
   font-weight: 700;
   font-size: 12px;
   line-height: 1.2;
@@ -134,7 +139,7 @@ html {
 }
 
 .heading {
-  font-family: var(--font-fraunces-stack);
+  font-family: var(--font-display);
   font-weight: 600;
   font-size: clamp(32px, 5vw, 46px);
   line-height: 1.08;
@@ -143,7 +148,7 @@ html {
 }
 
 .script {
-  font-family: var(--font-shantell-stack);
+  font-family: var(--font-display);
   font-weight: 400;
   font-size: clamp(20px, 2.6vw, 24px);
   line-height: 1.2;
@@ -164,7 +169,7 @@ html {
   border-radius: var(--radius-buttons);
   background: var(--btn-bg);
   color: var(--btn-fg);
-  font-family: var(--font-figtree-stack);
+  font-family: var(--font-body);
   font-weight: 700;
   font-size: 13px;
   line-height: 1;
@@ -192,8 +197,9 @@ html {
   transition: transform 200ms var(--ease-out);
 }
 
-.btn--agave {
-  --btn-bg: var(--color-agave);
+.btn--caramelo {
+  --btn-bg: var(--color-caramelo);
+  --btn-fg: var(--color-sobre-caramelo);
 }
 
 .btn--outline {
@@ -209,7 +215,7 @@ html {
 
 .btn--papel {
   --btn-bg: var(--color-papel);
-  --btn-fg: var(--color-agave);
+  --btn-fg: var(--color-tinta);
 }
 
 @media (min-width: 768px) {
@@ -289,14 +295,14 @@ html {
 }
 
 .logo__relato {
-  font-family: var(--font-gaegu-stack);
+  font-family: var(--font-display);
   font-weight: 700;
   font-size: 30px;
   line-height: 0.85;
 }
 
 .logo__cafe {
-  font-family: var(--font-nunito-stack);
+  font-family: var(--font-body);
   font-weight: 700;
   font-size: 12px;
   line-height: 1;
@@ -425,7 +431,7 @@ html {
   align-items: center;
   min-height: 56px;
   border-bottom: 1px solid var(--color-linea);
-  font-family: var(--font-fraunces-stack);
+  font-family: var(--font-display);
   font-weight: 600;
   font-size: 24px;
   text-decoration: none;
@@ -480,7 +486,7 @@ html {
 }
 
 .hero__title {
-  font-family: var(--font-fraunces-stack);
+  font-family: var(--font-display);
   font-weight: 600;
   font-size: clamp(40px, 7.4vw, 72px);
   line-height: 1.02;
@@ -494,7 +500,7 @@ html {
   align-items: center;
   gap: 8px;
   margin-top: 16px;
-  font-family: var(--font-shantell-stack);
+  font-family: var(--font-display);
   font-weight: 500;
   font-size: clamp(24px, 3.4vw, 32px);
   line-height: 1.2;
@@ -594,7 +600,7 @@ html {
   position: absolute;
   left: 4%;
   bottom: -28px;
-  font-family: var(--font-shantell-stack);
+  font-family: var(--font-display);
   font-size: 15px;
   color: var(--color-cacao);
   transform: rotate(-3deg);
@@ -684,7 +690,7 @@ html {
   height: auto;
   pointer-events: none;
   transform: rotate(var(--r, 0deg));
-  filter: drop-shadow(rgba(58, 31, 34, 0.1) -3px 4px 6px);
+  filter: drop-shadow(rgba(44, 30, 22, 0.1) -3px 4px 6px);
   transition:
     transform 260ms var(--ease-out),
     filter 260ms var(--ease-out);
@@ -692,7 +698,7 @@ html {
 
 .sticker[data-dragging="true"] .sticker__img {
   transform: rotate(calc(var(--r, 0deg) * 0.4)) scale(1.07);
-  filter: drop-shadow(rgba(58, 31, 34, 0.18) -10px 16px 18px);
+  filter: drop-shadow(rgba(44, 30, 22, 0.18) -10px 16px 18px);
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -762,8 +768,8 @@ html {
   color: var(--color-tinta);
   border: 2px solid var(--color-tinta);
   border-radius: 22px 26px 20px 24px;
-  box-shadow: -3px 4px 0 rgba(58, 31, 34, 0.12);
-  font-family: var(--font-shantell-stack);
+  box-shadow: -3px 4px 0 rgba(44, 30, 22, 0.12);
+  font-family: var(--font-display);
   font-size: 15px;
   line-height: 1.5;
   transform-origin: 50% 100%;
@@ -950,7 +956,7 @@ html {
 .menu__subcat {
   margin: 32px 0 0;
   padding-bottom: 8px;
-  font-family: var(--font-fraunces-stack);
+  font-family: var(--font-display);
   font-weight: 600;
   font-size: 18px;
   line-height: 1.2;
@@ -974,7 +980,7 @@ html {
 
 .item {
   padding-block: 20px;
-  border-bottom: 1px solid rgba(58, 31, 34, 0.1);
+  border-bottom: 1px solid rgba(44, 30, 22, 0.1);
   animation: item-in 420ms var(--ease-out) both;
   animation-delay: calc(min(var(--i, 0), 10) * 28ms);
 }
@@ -995,7 +1001,7 @@ html {
 }
 
 .item__name {
-  font-family: var(--font-fraunces-stack);
+  font-family: var(--font-display);
   font-weight: 600;
   font-size: 18px;
   line-height: 1.2;
@@ -1162,7 +1168,7 @@ html {
 
 .card__name {
   margin-top: 12px;
-  font-family: var(--font-fraunces-stack);
+  font-family: var(--font-display);
   font-weight: 600;
   font-size: 24px;
   line-height: 1.15;
@@ -1183,7 +1189,7 @@ html {
   gap: 12px;
   margin-top: auto;
   padding-top: 20px;
-  border-top: 1px solid rgba(58, 31, 34, 0.1);
+  border-top: 1px solid rgba(44, 30, 22, 0.1);
 }
 
 .card__price {
@@ -1277,7 +1283,7 @@ html {
 
 .fact dd {
   margin: 0;
-  font-family: var(--font-fraunces-stack);
+  font-family: var(--font-display);
   font-weight: 600;
   font-size: 20px;
   line-height: 1.25;
@@ -1288,7 +1294,7 @@ html {
   align-items: center;
   gap: 8px;
   margin-top: 6px;
-  font-family: var(--font-figtree-stack);
+  font-family: var(--font-body);
   font-weight: 400;
   font-size: 14px;
   color: var(--color-cacao);
@@ -1344,8 +1350,8 @@ html {
 /* ---------- BARDO ---------- */
 .bardo {
   position: relative;
-  background: var(--color-agave);
-  color: var(--color-papel);
+  background: var(--color-caramelo);
+  color: var(--color-sobre-caramelo);
 }
 
 .bardo__inner {
@@ -1373,7 +1379,7 @@ html {
 }
 
 .bardo__name {
-  font-family: var(--font-gaegu-stack);
+  font-family: var(--font-display);
   font-weight: 700;
   font-size: clamp(44px, 7vw, 64px);
   line-height: 0.95;
@@ -1386,17 +1392,17 @@ html {
 
 .bardo .script {
   margin-top: 16px;
-  color: var(--color-papel);
+  color: var(--color-sobre-caramelo);
 }
 
 .bardo__body {
   margin-top: 20px;
   max-width: 44ch;
-  color: rgba(246, 240, 242, 0.88);
+  color: rgba(44, 30, 22, 0.88);
 }
 
 .bardo .label {
-  color: var(--color-papel);
+  color: var(--color-sobre-caramelo);
 }
 
 .form {
@@ -1416,7 +1422,7 @@ html {
 }
 
 .form__title {
-  font-family: var(--font-fraunces-stack);
+  font-family: var(--font-display);
   font-weight: 600;
   font-size: 28px;
   line-height: 1.1;
@@ -1464,20 +1470,20 @@ html {
   font: inherit;
   font-size: 16px;
   color: var(--color-tinta);
-  caret-color: var(--color-agave);
+  caret-color: var(--color-grana);
   transition:
     border-color 200ms var(--ease-out),
     box-shadow 200ms var(--ease-out);
 }
 
 .field input::placeholder {
-  color: rgba(91, 72, 64, 0.75);
+  color: rgba(102, 86, 75, 0.75);
 }
 
 .field input:focus {
   outline: none;
-  border-color: var(--color-agave);
-  box-shadow: 0 0 0 3px rgba(79, 107, 84, 0.18);
+  border-color: var(--color-caramelo);
+  box-shadow: 0 0 0 3px rgba(217, 138, 43, 0.25);
 }
 
 .field input[aria-invalid="true"] {
@@ -1529,9 +1535,9 @@ fieldset.field {
 }
 
 .chip input:checked + span {
-  background: var(--color-agave);
-  border-color: var(--color-agave);
-  color: var(--color-papel);
+  background: var(--color-caramelo);
+  border-color: var(--color-caramelo);
+  color: var(--color-sobre-caramelo);
 }
 
 .chip input:active + span {
@@ -1539,7 +1545,7 @@ fieldset.field {
 }
 
 .chip input:focus-visible + span {
-  outline: 2px solid var(--color-agave);
+  outline: 2px solid var(--color-grana);
   outline-offset: 2px;
 }
 
@@ -1595,19 +1601,19 @@ fieldset.field {
 .pie a {
   font-size: 14px;
   line-height: 1.7;
-  color: rgba(246, 240, 242, 0.88);
+  color: rgba(255, 255, 255, 0.88);
 }
 
 .pie a {
   text-underline-offset: 4px;
-  text-decoration-color: rgba(246, 240, 242, 0.35);
+  text-decoration-color: rgba(255, 255, 255, 0.35);
 }
 
 .pie__base {
-  border-top: 1px solid rgba(246, 240, 242, 0.15);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
   padding-block: 20px;
   font-size: 12px;
-  color: rgba(246, 240, 242, 0.65);
+  color: rgba(255, 255, 255, 0.65);
 }
 
 .pie :focus-visible {
@@ -1655,7 +1661,7 @@ fieldset.field {
 }
 
 .indice__title {
-  font-family: var(--font-fraunces-stack);
+  font-family: var(--font-display);
   font-weight: 600;
   font-size: clamp(28px, 4.4vw, 40px);
   line-height: 1.08;
@@ -1663,7 +1669,7 @@ fieldset.field {
 }
 
 .indice__sub {
-  font-family: var(--font-shantell-stack);
+  font-family: var(--font-display);
   font-size: 20px;
   line-height: 1.2;
   color: var(--color-grana);
@@ -1770,7 +1776,7 @@ fieldset.field {
 .historia__fin {
   margin-top: 40px !important;
   text-align: center;
-  font-family: var(--font-shantell-stack);
+  font-family: var(--font-display);
   font-size: 20px;
   color: var(--color-grana);
 }

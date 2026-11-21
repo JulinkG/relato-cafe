@@ -1,19 +1,16 @@
 import type { Metadata, Viewport } from "next";
-import { Fraunces, Figtree, Shantell_Sans, Gaegu, Nunito } from "next/font/google";
+import { Gaegu, Nunito } from "next/font/google";
 import "./globals.css";
 import { SITE_URL } from "@/lib/site";
 
-const fraunces = Fraunces({
+// Tipografías oficiales de Relato café: Gaegu (títulos) y Nunito (textos)
+const gaegu = Gaegu({ subsets: ["latin"], weight: ["400", "700"], variable: "--font-gaegu", display: "swap" });
+const nunito = Nunito({
   subsets: ["latin"],
-  style: ["normal", "italic"],
-  axes: ["opsz"],
-  variable: "--font-fraunces",
+  weight: ["400", "600", "700", "800"],
+  variable: "--font-nunito",
   display: "swap",
 });
-const figtree = Figtree({ subsets: ["latin"], variable: "--font-figtree", display: "swap" });
-const shantell = Shantell_Sans({ subsets: ["latin"], variable: "--font-shantell", display: "swap" });
-const gaegu = Gaegu({ subsets: ["latin"], weight: "700", variable: "--font-gaegu", display: "swap" });
-const nunito = Nunito({ subsets: ["latin"], weight: "700", variable: "--font-nunito", display: "swap" });
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -24,11 +21,11 @@ export const metadata: Metadata = {
   icons: { icon: "/marca/cacomixtle.png" },
 };
 
-export const viewport: Viewport = { themeColor: "#F6F0F2" };
+export const viewport: Viewport = { themeColor: "#FFFFFF" };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es-MX" className={`${fraunces.variable} ${figtree.variable} ${shantell.variable} ${gaegu.variable} ${nunito.variable}`}>
+    <html lang="es-MX" className={`${gaegu.variable} ${nunito.variable}`}>
       <body>{children}</body>
     </html>
   );

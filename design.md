@@ -1,75 +1,54 @@
 # Relato café — Style Reference
-> Cuaderno de cuentos dibujado a crayón. Papel cálido rosado, stickers hechos a mano con línea oscura que se salen del borde, un solo acento carmín que marca el ritmo, y una tipografía editorial serif que le da confianza de libro bien editado.
+> Cuaderno de cuentos dibujado a crayón. Fondo blanco limpio, stickers hechos a mano con línea oscura que se salen del borde, Granada como acento que marca el ritmo, Caramelo como chispa cálida, y una tipografía hecha a mano (Gaegu) apoyada en una sans redonda y legible (Nunito).
 
 **Theme:** light
 
-Estructura inspirada en un "cuaderno ilustrado editorial"; colores, tipografías e ilustraciones son exclusivamente de Relato café (Propuesta A "Grana y Rayón"). No usar paletas, fuentes ni ilustraciones de otras marcas.
+> **Actualización de marca (nov 2026) — vinculante.** La paleta y las tipografías de esta sección reemplazan a las de la Propuesta A "Grana y Rayón". En el resto del documento, los nombres antiguos se leen así: **Papel → Blanco**, **Tinta → Expreso**, **Grana → Granada**, **Agave → Caramelo** (BARDO), **Fraunces y Shantell Sans → Gaegu**, **Figtree → Nunito**. Los nombres de token CSS se conservan (`--color-papel`, `--color-tinta`, `--color-grana`) y apuntan a los nuevos valores `--relato-*`.
 
-Relato se lee como un libro de relatos ilustrado a mano que vive dentro de una cafetería. El lienzo es Papel (#F6F0F2) con tarjetas blancas encima, y toda la estructura tipográfica la lleva Tinta (#3A1F22), un café casi negro. El único acento saturado es Grana (#A3123A), el carmín de la cochinilla oaxaqueña: aparece en títulos de sección, botones y detalles, y como franja completa en momentos de impacto, nunca en nombres de producto ni precios. Cacao (#5B4840) suaviza descripciones y textos de apoyo. Agave (#4F6B54) es exclusivo de BARDO · Barra errante, la barra móvil: donde aparece el verde, empieza el mundo de los eventos. La tipografía tiene tres voces: Fraunces (serif editorial) para títulos y productos, Figtree (sans limpia) para texto y UI, y Shantell Sans (letra a mano) para frases emotivas como el slogan "Historias con café". Gaegu queda reservada para el logotipo "Relato" y para "BARDO". Los componentes son ligeros (tarjetas de 8px, botones píldora de 32px, líneas finas) para que los dibujos de crayón y la fotografía cuenten la historia.
+Colores, tipografías e ilustraciones son exclusivamente de Relato café. No usar paletas, fuentes ni ilustraciones de otras marcas.
+
+Relato se lee como un libro de relatos ilustrado a mano que vive dentro de una cafetería. El lienzo es Blanco (#FFFFFF) y toda la estructura tipográfica la lleva Expreso (#2C1E16), un café casi negro. Granada (#C0392B) es el color secundario: títulos de sección, botones principales, enlaces y franjas de impacto; nunca en nombres de producto ni precios. Caramelo (#D98A2B) es el acento: BARDO · Barra errante, detalles y estados seleccionados. Sobre Caramelo el texto va en Expreso (el blanco no contrasta lo suficiente). La tipografía tiene dos voces: Gaegu (hecha a mano) para títulos, nombres de producto, logotipo y frases emotivas, y Nunito para texto, UI, precios y etiquetas. Los componentes son ligeros (tarjetas de 8px, botones píldora de 32px, líneas finas) para que los dibujos de crayón cuenten la historia.
 
 ## Tokens — Colors
 
 | Name | Value | Token | Role |
 |------|-------|-------|------|
-| Papel | `#F6F0F2` | `--color-papel` | Lienzo base de toda la página y del hero. Blanco cálido ligeramente rosado: se lee como papel, no como pantalla. También es el color del texto sobre Grana, Agave y Tinta |
-| Tinta | `#3A1F22` | `--color-tinta` | Color estructural: títulos, nombres de producto, precios, texto principal, navegación y pie de página. Café casi negro, nunca negro puro |
-| Grana | `#A3123A` | `--color-grana` | Único acento saturado. Títulos de sección (etiquetas), botones principales, enlaces, slogan y detalles; también franjas completas de sección. Nunca en nombres de producto ni precios |
-| Cacao | `#5B4840` | `--color-cacao` | Descripciones de producto, textos secundarios, horarios, notas y leyendas |
-| Agave | `#4F6B54` | `--color-agave` | Exclusivo de BARDO · Barra errante: franjas, botones y secciones de eventos. No se usa en el mundo de la cafetería |
-| Blanco | `#FFFFFF` | `--color-blanco` | Superficie de tarjetas, paneles y campos de formulario que flotan sobre el Papel |
-| Línea | `#3A1F22` @ 15–40% | `--color-linea` | Divisores finos y bordes de campos (Tinta o Grana con opacidad). No hay grises sólidos |
+| Blanco | `#FFFFFF` · rgb(255,255,255) | `--relato-blanco` (`--color-papel`, `--color-blanco`) | Primario. Fondo de toda la página, tarjetas y formularios. También es el texto sobre Granada y Expreso |
+| Granada | `#C0392B` · rgb(192,57,43) | `--relato-granada` (`--color-grana`) | Secundario. Etiquetas y títulos de sección, botones principales, enlaces, slogan y franjas completas. Nunca en nombres de producto ni precios |
+| Caramelo | `#D98A2B` · rgb(217,138,43) | `--relato-caramelo` (`--color-caramelo`) | Acento. Banda y botón de BARDO, chips seleccionados, foco de campos. Texto encima siempre en Expreso, nunca en Blanco |
+| Expreso | `#2C1E16` · rgb(44,30,22) | `--relato-expreso` (`--color-tinta`) | Texto: títulos, nombres de producto, precios, texto principal, navegación y pie de página. Nunca negro puro |
+| Expreso suave | `#66564B` | `--color-cacao` | Derivado de Expreso para descripciones, notas y leyendas (no es color de marca, solo texto secundario) |
+| Línea | Expreso @ 10–20% / Granada @ 40% | `--color-linea`, `--color-linea-grana` | Divisores finos y bordes de campos. No hay grises sólidos |
 
 ## Tokens — Typography
 
-### Gaegu — Logotipo y BARDO · `--font-gaegu`
-- **Weights:** 700
-- **Sizes:** 18px, 28px, 52px, 60px+
-- **Line height:** 0.85–1.0
-- **Letter spacing:** normal
-- **Role:** Solo para el logotipo tipográfico "Relato" (con "café" en Nunito Bold centrado debajo) y para el nombre "BARDO · Barra errante". Nunca en títulos de sección ni en texto corrido.
+Google Fonts: `Gaegu:wght@400;700` y `Nunito:wght@400;600;700;800` (cargadas con `next/font` en `app/layout.tsx`).
 
-### Nunito — "café" del logotipo · `--font-nunito`
-- **Weights:** 700
-- **Sizes:** 16px, 20px
-- **Line height:** 1.0
-- **Letter spacing:** 0.06em
-- **Role:** Únicamente la palabra "café" centrada bajo "Relato" en el logotipo.
+### Gaegu — Títulos · `--font-display`
+- **Weights:** 700 (títulos, productos, logotipo), 400 (frases a mano)
+- **Line height:** 0.85–1.2
+- **Role:** Títulos de página y de sección, nombres de producto, encabezados de tarjetas, logotipo "Relato", "BARDO · Barra errante" y frases emotivas ("Historias con café", "Elige tu capítulo de hoy"). Mayúscula inicial, nunca todo en mayúsculas.
 
-### Fraunces — Títulos y productos · `--font-fraunces`
-- **Weights:** 600 (títulos), 400 itálica (detalles)
-- **Sizes:** 18px, 24px, 32px, 46px, 56px
-- **Line height:** 1.05–1.2
-- **Letter spacing:** -0.01em en tamaños grandes, normal en pequeños
-- **Role:** Voz editorial principal: títulos de página y de sección grandes, nombres de producto, encabezados de tarjetas. En minúsculas con mayúscula inicial (nunca todo en mayúsculas).
-
-### Figtree — Texto y UI · `--font-figtree`
-- **Weights:** 400, 700
-- **Sizes:** 11px, 12px, 13px, 14px, 16px
-- **Line height:** 1.3–1.6
-- **Letter spacing:** normal en párrafos; 0.15–0.2em en etiquetas en mayúsculas
-- **Role:** Párrafos, descripciones, formularios, navegación, precios y etiquetas. Las etiquetas de sección (CLÁSICOS, PARA COMER, COTIZA TU EVENTO) van en Figtree 700 mayúsculas con espaciado amplio: es la firma tipográfica de la UI.
-
-### Shantell Sans — Voz a mano · `--font-shantell`
-- **Weights:** 400, 500
-- **Sizes:** 18px, 24px, 32px
-- **Line height:** 1.2
-- **Letter spacing:** normal
-- **Role:** Capa emotiva: slogan "Historias con café", frases bajo los títulos ("Llevamos la barra a tu fiesta"), microtextos de bienvenida. Nunca en botones, etiquetas ni navegación.
+### Nunito — Textos · `--font-body`
+- **Weights:** 400 (párrafos), 600, 700 (precios, botones, etiquetas), 800 (énfasis)
+- **Sizes:** 11px–16px
+- **Letter spacing:** normal en párrafos; 0.12–0.2em en etiquetas y botones en mayúsculas
+- **Role:** Párrafos, descripciones, formularios, navegación, precios, botones y etiquetas de sección (CLÁSICOS, PARA COMER, COTIZA TU EVENTO), además de "café" en el logotipo.
 
 ### Type Scale
 
-| Role | Family | Weight | Size | Line Height | Letter Spacing | Token |
-|------|--------|--------|------|-------------|----------------|-------|
-| caption | Figtree | 400 | 12px | 1.5 | normal | `--text-caption` |
-| label | Figtree | 700 | 12px | 1.2 | 0.18em (mayúsculas) | `--text-label` |
-| body-sm | Figtree | 400 | 14px | 1.55 | normal | `--text-body-sm` |
-| body | Figtree | 400 | 16px | 1.6 | normal | `--text-body` |
-| product | Fraunces | 600 | 18px | 1.2 | normal | `--text-product` |
-| script | Shantell Sans | 400 | 24px | 1.2 | normal | `--text-script` |
-| heading-sm | Fraunces | 600 | 32px | 1.1 | -0.01em | `--text-heading-sm` |
-| heading | Fraunces | 600 | 46px | 1.08 | -0.01em | `--text-heading` |
-| heading-lg | Fraunces | 600 | 56px | 1.05 | -0.015em | `--text-heading-lg` |
-| logo | Gaegu | 700 | 60–88px | 0.85 | normal | `--text-logo` |
+| Role | Family | Weight | Size | Line Height | Letter Spacing |
+|------|--------|--------|------|-------------|----------------|
+| caption | Nunito | 400 | 12px | 1.5 | normal |
+| label | Nunito | 700 | 12px | 1.2 | 0.18em (mayúsculas) |
+| body-sm | Nunito | 400 | 14px | 1.55 | normal |
+| body | Nunito | 400 | 16px | 1.6 | normal |
+| product | Gaegu | 700 | 18px | 1.2 | normal |
+| script | Gaegu | 400 | 24px | 1.2 | normal |
+| heading-sm | Gaegu | 700 | 32px | 1.1 | normal |
+| heading | Gaegu | 700 | 46px | 1.08 | normal |
+| heading-lg | Gaegu | 700 | 56px | 1.05 | normal |
+| logo | Gaegu | 700 | 60–88px | 0.85 | normal |
 
 ## Tokens — Spacing & Shapes
 
