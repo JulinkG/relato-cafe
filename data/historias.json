@@ -4,7 +4,7 @@
       "slug": "soda-de-moras",
       "titulo": "Soda de moras",
       "subtitulo": "Cómo el conde Vlad dejó la sangre",
-      "producto": { "categoria": "sodas-naturales", "nombre": "Moras" },
+      "producto": { "categoria": "sodas-naturales", "nombre": "Soda de Moras" },
       "sticker": "soda",
       "parrafos": [
         "—Nada de sangre, conde —dijo el médico, limpiando sus lentes—. Su colesterol tiene 743 años de antigüedad.",
@@ -18,7 +18,7 @@
       "slug": "omelette-lunch",
       "titulo": "Omelette lunch",
       "subtitulo": "La tía Mercedes y sus recuerditos de viaje",
-      "producto": { "categoria": "para-comer", "nombre": "Omelette" },
+      "producto": { "categoria": "desayunos", "nombre": "Omelette" },
       "sticker": "flor",
       "parrafos": [
         "A la tía Mercedes le encanta viajar. Va por aquí, va por allá, y jamás olvida traer algún recuerdito de los lugares que visita: arena de la playa, sombreros de España y un busto de un notario de Toledo que, si lo miras fijamente, parece que te sigue con la mirada.",
@@ -30,7 +30,7 @@
       "slug": "limonada-de-dragonfruit",
       "titulo": "Limonada de Dragonfruit",
       "subtitulo": "Sir Aldric y los dos dragones",
-      "producto": { "categoria": "limonadas", "nombre": "Fruta de dragón" },
+      "producto": { "categoria": "limonadas", "nombre": "Limonada Fruta de dragón" },
       "sticker": "pata",
       "parrafos": [
         "—Solo dos veces he visto un dragón —dijo Sir Aldric, mientras se acomodaba el cinturón de la armadura que la cebada había apretujado contra su barriga—. La primera vez corrí tres leguas sin detenerme. Perdí mi espada y la bolsa con el oro de la cosecha.",

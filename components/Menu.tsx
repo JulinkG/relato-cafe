@@ -5,9 +5,10 @@ import { categorias, negocio, precio, waLink } from "@/lib/data";
 import { WhatsApp } from "./Icons";
 
 const corto: Record<string, string> = {
+  "cafe-clasico": "Clásicos",
   "sodas-naturales": "Sodas",
   "aguas-frescas": "Aguas",
-  "postres-y-extras": "Extras",
+  "club-sandwich": "Club",
 };
 
 export function Menu() {

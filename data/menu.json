@@ -2,43 +2,43 @@
   "moneda": "MXN",
   "categorias": [
     {
-      "id": "clasicos",
-      "nombre": "Clásicos",
+      "id": "cafe-clasico",
+      "nombre": "Café clásico",
       "productos": [
         {
           "nombre": "Americano",
           "precio": 40,
-          "descripcion": "Espresso doble alargado con agua: limpio y aromático."
+          "descripcion": "Espresso doble alargado con agua caliente: limpio, aromático y con cuerpo, para disfrutar sin prisa."
         },
         {
           "nombre": "Espresso",
           "precio": 30,
-          "descripcion": "Doble, corto e intenso, para tomarse de un trago."
+          "descripcion": "Doble, corto e intenso, con crema dorada y notas tostadas que despiertan al primer sorbo."
         },
         {
           "nombre": "Capuchino",
           "precio": 50,
-          "descripcion": "Espresso con leche espumada y un toque de canela."
+          "descripcion": "Espresso bajo una nube de leche espumada, sedosa y tibia, con un toque de canela."
         },
         {
           "nombre": "Latte",
           "precio": 50,
-          "descripcion": "Espresso suave con mucha leche cremosa al vapor."
+          "descripcion": "Espresso suave abrazado por leche cremosa al vapor: ligero, tibio y reconfortante."
         },
         {
           "nombre": "Flat white",
           "precio": 50,
-          "descripcion": "Doble espresso con leche sedosa y poca espuma."
+          "descripcion": "Doble espresso con leche sedosa y apenas espuma: más café, más cuerpo, textura aterciopelada."
         },
         {
           "nombre": "Macchiato",
           "precio": 50,
-          "descripcion": "Espresso intenso con apenas un toque de leche."
+          "descripcion": "Espresso intenso con un toque de leche que suaviza su carácter sin esconderlo."
         },
         {
-          "nombre": "Mocha",
+          "nombre": "Moka",
           "precio": 60,
-          "descripcion": "Espresso, chocolate y leche: dulce y reconfortante."
+          "descripcion": "Espresso, chocolate y leche cremosa que se funden en una taza dulce y reconfortante."
         }
       ]
     },
@@ -47,54 +47,54 @@
       "nombre": "Especiales",
       "productos": [
         {
-          "nombre": "Caramel machiatto",
+          "nombre": "Macchiato Ámbar",
           "precio": 60,
-          "descripcion": "Espresso con leche y caramelo: dulce, tostado y con la capa ámbar que le da su nombre."
+          "descripcion": "Espresso, leche cremosa y caramelo que forma una capa ámbar: dulce, tostado y sedoso."
         },
         {
           "nombre": "Matcha latte",
           "precio": 70,
-          "descripcion": "Matcha orgánico batido con leche y hielo: herbal, suave y refrescante."
+          "descripcion": "Matcha orgánico batido con leche y hielo: herbal, suave y refrescante desde el primer sorbo."
         },
         {
           "nombre": "Chai latte",
           "precio": 60,
-          "descripcion": "Mezcla de chai especiado con leche caliente: cálido, aromático y reconfortante."
+          "descripcion": "Chai especiado con leche caliente: especias cálidas y aromáticas que reconfortan en cada sorbo."
         },
         {
-          "nombre": "Mocha blanco",
+          "nombre": "Moka blanco",
           "precio": 60,
-          "descripcion": "Espresso con leche y chocolate blanco: cremoso, dulce y sedoso."
+          "descripcion": "Espresso, leche y chocolate blanco: cremoso, dulce y sedoso de principio a fin."
         },
         {
           "nombre": "Bombón",
           "precio": 60,
-          "descripcion": "Espresso con leche y leche condensada: dulce, cremoso y con carácter."
+          "descripcion": "Espresso con leche y leche condensada: dulce, cremoso y con todo el carácter del café."
         },
         {
           "nombre": "Cajeta latte",
           "precio": 60,
-          "descripcion": "Espresso con leche y cajeta: el dulce de leche mexicano en tu taza."
+          "descripcion": "Espresso con leche y cajeta: el dulce de leche mexicano derretido en tu taza."
         },
         {
           "nombre": "Lotus latte",
           "precio": 70,
-          "descripcion": "Espresso y leche con galleta Lotus caramelizada: notas de caramelo y especias."
+          "descripcion": "Espresso y leche con galleta Lotus caramelizada: notas de caramelo, canela y especias."
         },
         {
           "nombre": "Espresso tonic",
           "precio": 60,
-          "descripcion": "Espresso doble sobre agua tónica fría: burbujeante, amargo y refrescante."
+          "descripcion": "Espresso doble sobre agua tónica bien fría: burbujeante, amargo y sorprendentemente refrescante."
         },
         {
           "nombre": "Espresso tonic orange",
           "precio": 60,
-          "descripcion": "Espresso doble con jugo de naranja y agua mineral: cítrico y burbujeante."
+          "descripcion": "Espresso doble con jugo de naranja y agua mineral: cítrico, chispeante y lleno de energía."
         },
         {
           "nombre": "Afogatto",
-          "precio": 60,
-          "descripcion": "Affogato: espresso caliente vertido sobre helado de vainilla, con un toque de Nutella."
+          "precio": 70,
+          "descripcion": "Espresso caliente vertido sobre helado de vainilla con un toque de Nutella: frío y caliente en una cucharada."
         }
       ]
     },
@@ -105,27 +105,32 @@
         {
           "nombre": "Frappuccino",
           "precio": 80,
-          "descripcion": "Café frappé con crema batida y chispas de chocolate."
+          "descripcion": "Café frappé cremoso, coronado con crema batida, un hilo de chocolate y chispas."
         },
         {
-          "nombre": "Oreo",
+          "nombre": "Frappé Oreo",
           "precio": 80,
-          "descripcion": "Frappé de café con galleta Oreo y crema batida."
+          "descripcion": "Frappé de café con galletas Oreo trituradas y crema batida: cremoso e irresistible."
         },
         {
-          "nombre": "Fresas con crema",
+          "nombre": "Frappé Fresas con crema",
           "precio": 80,
-          "descripcion": "Fresas, crema y mermelada, bien frío. Sin café."
+          "descripcion": "Fresas, crema y mermelada batidas con hielo: dulce, frutal y bien frío. Sin café."
         },
         {
-          "nombre": "Choco-banana",
+          "nombre": "Frappé Choco-banana",
           "precio": 80,
-          "descripcion": "Plátano y chocolate con crema batida. Sin café."
+          "descripcion": "Plátano y chocolate batidos con leche y hielo, coronados con crema batida. Sin café."
         },
         {
-          "nombre": "Moka",
+          "nombre": "Frappé Moka",
           "precio": 80,
-          "descripcion": "Frappé de chocolate con crema batida y chispas."
+          "descripcion": "Frappé de chocolate cremoso con crema batida y chispas: un postre que se toma con popote."
+        },
+        {
+          "nombre": "Frappé Horchata",
+          "precio": 80,
+          "descripcion": "Frappé de horchata dulce y cremosa: el sabor tradicional mexicano, bien frío."
         }
       ]
     },
@@ -134,24 +139,19 @@
       "nombre": "Sodas naturales",
       "productos": [
         {
-          "nombre": "Moras",
+          "nombre": "Soda de Moras",
           "precio": 60,
-          "descripcion": "Moras con agua mineral: ácida, frutal y burbujeante."
+          "descripcion": "Moras con agua mineral: ácida, frutal y llena de burbujas de color intenso."
         },
         {
-          "nombre": "Kiwi-fresa",
+          "nombre": "Soda Piña-coco",
           "precio": 60,
-          "descripcion": "Kiwi y fresa con agua mineral, fresca y frutal."
+          "descripcion": "Piña y coco con agua mineral: un sorbo tropical, fresco y burbujeante."
         },
         {
-          "nombre": "Piña-coco",
+          "nombre": "Soda Jengibre-limón",
           "precio": 60,
-          "descripcion": "Piña y coco con agua mineral: sabor tropical."
-        },
-        {
-          "nombre": "Jengibre-limón",
-          "precio": 60,
-          "descripcion": "Limón, jengibre y miel con agua mineral; picosita."
+          "descripcion": "Limón, jengibre y miel con agua mineral: fresca, burbujeante y con un final picosito."
         }
       ]
     },
@@ -160,29 +160,50 @@
       "nombre": "Limonadas",
       "productos": [
         {
-          "nombre": "Fruta de dragón",
+          "nombre": "Limonada Fruta de dragón",
           "precio": 60,
-          "descripcion": "Limonada con uva blanca y mango, mineralizada."
+          "descripcion": "Limonada mineralizada con uva blanca y mango: exótica, dulce y chispeante."
         },
         {
-          "nombre": "Nébula",
+          "nombre": "Limonada Nébula",
           "precio": 60,
-          "descripcion": "Limonada rosa mineralizada, dulce y refrescante."
+          "descripcion": "Limonada rosa mineralizada: dulce, refrescante y tan bonita como suena."
         },
         {
-          "nombre": "Natural",
+          "nombre": "Limonada Natural",
           "precio": 60,
-          "descripcion": "La limonada clásica, mineralizada y bien fría."
+          "descripcion": "La limonada clásica, mineralizada y bien fría: ácida, burbujeante y perfecta."
         },
         {
           "nombre": "Naranjada",
           "precio": 60,
-          "descripcion": "Jugo de naranja con agua mineral, bien fría."
+          "descripcion": "Jugo de naranja con agua mineral, bien fría: dulce, cítrica y llena de burbujas."
         },
         {
-          "nombre": "Mango-maracuyá",
+          "nombre": "Limonada Mango-maracuyá",
           "precio": 60,
-          "descripcion": "Mango y maracuyá con agua mineral: dulce y ácida."
+          "descripcion": "Mango y maracuyá con agua mineral: dulce, ácida y tropical en cada trago."
+        }
+      ]
+    },
+    {
+      "id": "smoothies",
+      "nombre": "Smoothies",
+      "productos": [
+        {
+          "nombre": "Smoothie de Moras",
+          "precio": 70,
+          "descripcion": "Moras licuadas en un smoothie espeso, frutal e intenso."
+        },
+        {
+          "nombre": "Smoothie Kiwi-fresa",
+          "precio": 70,
+          "descripcion": "Kiwi y fresa en un smoothie espeso y fresco, entre dulce y ácido."
+        },
+        {
+          "nombre": "Smoothie de Mango",
+          "precio": 70,
+          "descripcion": "Mango licuado en un smoothie espeso, dulce y tropical."
         }
       ]
     },
@@ -191,81 +212,135 @@
       "nombre": "Aguas frescas",
       "productos": [
         {
-          "nombre": "Jamaica",
+          "nombre": "Agua de Jamaica",
           "precio": 25,
-          "descripcion": "Agua fresca de flor de jamaica, ligera y ácida."
+          "descripcion": "Agua fresca de flor de jamaica: ligera, ácida y con su color rubí de siempre."
         },
         {
-          "nombre": "Horchata",
+          "nombre": "Agua de Horchata",
           "precio": 25,
-          "descripcion": "Agua fresca de horchata, dulce y cremosa."
+          "descripcion": "Agua fresca de horchata, dulce y cremosa, como la de casa."
         }
       ]
     },
     {
-      "id": "para-comer",
-      "nombre": "Para comer",
+      "id": "baguettes",
+      "nombre": "Baguettes",
       "productos": [
-        {
-          "nombre": "Pan francés",
-          "precio": 90,
-          "descripcion": "Pan brioche bañado en huevo, leche y vainilla, dorado y servido con frutos rojos y kiwi."
-        },
-        {
-          "nombre": "Omelette",
-          "precio": 80,
-          "descripcion": "Omelette de cuatro huevos con jamón y mozzarella fundida, acompañado de ensalada."
-        },
-        {
-          "nombre": "Club sandwich",
-          "precio": 80,
-          "descripcion": "Pan integral con pollo marinado al limón, lechuga fresca, mozzarella y aderezo César."
-        },
         {
           "nombre": "Baguette española",
           "precio": 80,
-          "descripcion": "Baguette con jamón, pepperoni y mozzarella, ensalada y aderezo de chipotle aparte."
+          "descripcion": "Baguette crujiente con jamón, pepperoni y mozzarella fundida; ensalada y aderezo de chipotle aparte."
         },
         {
           "nombre": "Baguette pollo crunchy",
           "precio": 80,
-          "descripcion": "Baguette con jamón, pollo marinado y crujiente y mozzarella, ensalada y aderezo de chipotle aparte."
+          "descripcion": "Baguette con jamón, pollo marinado bien crujiente y mozzarella; ensalada y chipotle aparte."
         },
         {
           "nombre": "Baguette arrachera",
-          "precio": 105,
-          "descripcion": "Baguette con jamón, arrachera y mozzarella, ensalada y aderezo de chipotle aparte."
+          "precio": 110,
+          "descripcion": "Baguette con arrachera jugosa, mozzarella fundida, aguacate y chimichurri, con ensalada fresca."
         },
         {
           "nombre": "Pan de ajo",
           "precio": 45,
-          "descripcion": "Baguette con mantequilla de ajo y perejil, gratinado con mozzarella y con salsa de tomate para acompañar."
-        },
-        {
-          "nombre": "Pizzetta",
-          "precio": 40,
-          "descripcion": "Masa de hojaldre rellena de salsa de tomate, mozzarella, jamón y pepperoni."
+          "descripcion": "Baguette con mantequilla de ajo y perejil, gratinado con mozzarella y salsa de tomate para acompañar."
         }
       ]
     },
     {
-      "id": "postres-y-extras",
-      "nombre": "Postres y extras",
+      "id": "club-sandwich",
+      "nombre": "Club sandwich",
       "productos": [
         {
-          "nombre": "Galletas",
-          "precio": 40,
-          "descripcion": "Paquete de galletas artesanales."
+          "nombre": "Club sandwich Pollo con champiñón",
+          "precio": 100,
+          "descripcion": "Pan brioche suave con pollo jugoso bañado en salsa de champiñón. Con ensalada y manzana con miel."
         },
+        {
+          "nombre": "Club sandwich Milanesa",
+          "precio": 100,
+          "descripcion": "Pan brioche con milanesa de pollo crujiente, queso mozzarella y mayonesa de chipotle. Con ensalada y manzana con miel."
+        },
+        {
+          "nombre": "Club sandwich Estilo italiano",
+          "precio": 80,
+          "descripcion": "Pan brioche con jamón, pepperoni y mozzarella fundida. Con ensalada y manzana con miel."
+        }
+      ]
+    },
+    {
+      "id": "desayunos",
+      "nombre": "Desayunos",
+      "productos": [
+        {
+          "nombre": "Pan francés",
+          "precio": 90,
+          "descripcion": "Pan brioche bañado en huevo, leche y vainilla, dorado en sartén y servido con frutos rojos y kiwi."
+        },
+        {
+          "nombre": "Omelette",
+          "precio": 80,
+          "descripcion": "Cuatro huevos esponjosos rellenos de jamón y mozzarella fundida, con ensalada fresca."
+        }
+      ]
+    },
+    {
+      "id": "bowls",
+      "nombre": "Bowls",
+      "productos": [
+        {
+          "nombre": "Bowl Avena y fruta",
+          "precio": 100,
+          "descripcion": "Avena cremosa con fresas, moras, plátano y manzana, terminada con un hilo de miel."
+        },
+        {
+          "nombre": "Bowl Ensalada César",
+          "precio": 100,
+          "descripcion": "Lechugas frescas, pollo, tomate, cebolla morada, germinado y crutones crujientes con aderezo César."
+        }
+      ]
+    },
+    {
+      "id": "postres",
+      "nombre": "Postres",
+      "productos": [
+        {
+          "nombre": "Galletas brownie",
+          "precio": 40,
+          "descripcion": "Bolsa de galletas tipo brownie."
+        },
+        {
+          "nombre": "Besos de nuez caja chica",
+          "precio": 50,
+          "descripcion": "Caja chica de besos de nuez."
+        },
+        {
+          "nombre": "Besos de nuez caja grande",
+          "precio": 100,
+          "descripcion": "Caja grande de besos de nuez."
+        }
+      ]
+    },
+    {
+      "id": "extras",
+      "nombre": "Extras",
+      "productos": [
         {
           "nombre": "Pollo extra",
           "precio": 20,
-          "descripcion": "Agrega pollo a tu baguette o sandwich."
+          "descripcion": "Porción extra de pollo."
         },
         {
           "nombre": "Tasajo extra",
           "precio": 30,
-          "descripcion": "Agrega tasajo a tu baguette o sandwich."
+          "descripcion": "Porción extra de tasajo."
+        },
+        {
+          "nombre": "Cold foam",
+          "precio": 10,
+          "descripcion": "Espuma fría cremosa para coronar tu bebida."
         }
       ]
     }
