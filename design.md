@@ -22,7 +22,7 @@ Relato se lee como un libro de relatos ilustrado a mano que vive dentro de una c
 
 ## Tokens — Typography
 
-Google Fonts: `Gaegu:wght@400;700` y `Nunito:wght@400;600;700;800` (cargadas con `next/font` en `app/layout.tsx`).
+Gaegu ES (archivos locales en `app/fonts`, pesos 300/400/700, con acentos y signos del español) y Google Fonts `Nunito:wght@400;600;700;800`, cargadas con `next/font` en `app/layout.tsx`.
 
 ### Gaegu — Títulos · `--font-display`
 - **Weights:** 700 (títulos, productos, logotipo), 400 (frases a mano)

@@ -1,10 +1,20 @@
 import type { Metadata, Viewport } from "next";
-import { Gaegu, Nunito } from "next/font/google";
+import localFont from "next/font/local";
+import { Nunito } from "next/font/google";
 import "./globals.css";
 import { SITE_URL } from "@/lib/site";
 
-// Tipografías oficiales de Relato café: Gaegu (títulos) y Nunito (textos)
-const gaegu = Gaegu({ subsets: ["latin"], weight: ["400", "700"], variable: "--font-gaegu", display: "swap" });
+// Tipografías oficiales de Relato café: Gaegu ES (títulos) y Nunito (textos)
+// Gaegu ES es una versión de Gaegu con acentos y signos del español; se sirve desde app/fonts (licencia OFL).
+const gaegu = localFont({
+  src: [
+    { path: "./fonts/GaeguES-Light.woff2", weight: "300", style: "normal" },
+    { path: "./fonts/GaeguES-Regular.woff2", weight: "400", style: "normal" },
+    { path: "./fonts/GaeguES-Bold.woff2", weight: "700", style: "normal" },
+  ],
+  variable: "--font-gaegu",
+  display: "swap",
+});
 const nunito = Nunito({
   subsets: ["latin"],
   weight: ["400", "600", "700", "800"],
