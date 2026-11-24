@@ -6,10 +6,13 @@ import { waLink } from "@/lib/data";
 import { Arrow } from "./Icons";
 import { Wave } from "./Wave";
 
-const barras = ["Barra de café", "Sodas y limonadas", "Café + sodas"];
+const barras = ["Barra de café", "Sodas y limonadas", "Canapés", "Postres"];
 
 export function Bardo() {
-  const [barra, setBarra] = useState(barras[0]);
+  const [seleccion, setSeleccion] = useState<string[]>([barras[0]]);
+
+  const toggleBarra = (b: string) =>
+    setSeleccion((prev) => (prev.includes(b) ? prev.filter((x) => x !== b) : [...prev, b]));
   const [error, setError] = useState<string | null>(null);
 
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -32,7 +35,7 @@ export function Bardo() {
       `Hola BARDO, soy ${nombre}. Quiero cotizar la barra para un evento.`,
       `• Fecha: ${fechaTxt}`,
       `• Invitados: ${invitados || "por definir"}`,
-      `• Tipo de barra: ${barra}`,
+      `• Tipo de barra: ${seleccion.length ? barras.filter((b) => seleccion.includes(b)).join(", ") : "por definir"}`,
       lugar ? `• Lugar: ${lugar}` : null,
     ]
       .filter(Boolean)
@@ -58,7 +61,7 @@ export function Bardo() {
             </h2>
             <p className="script">Llevamos la barra a tu fiesta</p>
             <p className="bardo__body">
-              La barra móvil de Relato: café, sodas y limonadas preparados ahí mismo, en tu boda, cumpleaños o evento de
+              La barra móvil de Relato: café, sodas, limonadas, canapés y postres preparados ahí mismo, en tu boda, cumpleaños o evento de
               oficina. Cuéntanos qué tienes en mente y te mandamos la cotización por WhatsApp.
             </p>
           </div>
@@ -97,11 +100,17 @@ export function Bardo() {
             </div>
 
             <fieldset className="field">
-              <legend>Tipo de barra</legend>
+              <legend>Tipo de barra (elige una o varias)</legend>
               <div className="chips">
                 {barras.map((b) => (
                   <label className="chip" key={b}>
-                    <input type="radio" name="barra" value={b} checked={barra === b} onChange={() => setBarra(b)} />
+                    <input
+                      type="checkbox"
+                      name="barra"
+                      value={b}
+                      checked={seleccion.includes(b)}
+                      onChange={() => toggleBarra(b)}
+                    />
                     <span>{b}</span>
                   </label>
                 ))}
